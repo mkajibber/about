@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+    </head>
+    <body>
+  
+    <p><img src="pieni_parta-ukko-kasvot.jpg" alt="Kasvokuva" style="width:130px;height:150px;margin-right:15px;">
+      <h2>Kuka</h2><p>Markus Kristian</p><p>Etelä-Suomi</p><p>Sähkö- ja automaatioasentaja</p>
+    </p>
+    
+    
+    <div class="yhteisetnapit">
+        <button class="painonappi painonappi1" onclick="naytaAikajana()" style="width:82px;">Aikajana</button>
+        <button class="painonappi painonappi1" onclick="naytaPatevyydet()" style="width:99px;">Pätevyydet</button>
+        <button class="painonappi painonappi1" style="width:53px;">Työt</button>
+        <button class="painonappi painonappi1" style="width:89px;">Tutkinnot</button>
+    </div>
+
+    
+    <div class="ylhaalta400px" id="tyot" style="display: none">
+    
+    
+    
+    </div>
+    
+    <div class="ylhaalta400px" id="patevyydet" style="display: none">
+    
+        <div class="kontti_patevyydet">
+            <div class="sisalto_patevyydet">
+            
+                <h2>Pätevyydet</h2>
+                <div class="sisennys10px">
+                    <p>Työturvallisuus</p>
+                    <p>Hätäensiapu 8h</p>
+                    <p>Tulityöt ml. kattotyöt</p>
+                    <p>Hygienia</p>
+                    <p>Anniskelu</p>
+                </div>
+                
+            </div>
+        </div>
+    
+    </div>
+    
+    <div class="ylhaalta400px" id="aikajana" style="display: block">
+        <div class="aikajana">
+            <div class="kontti right">
+                <div class="sisalto">
+                    <h2>2020</h2>
+                    <p>Korkeakoulujen yhteishaku on käynnissä joka tarkoittaa, että nyt on hyvä aika suunnitella tulevaisuutta niiltä osin kuin se on mahdollista.</p>
+                    <p>Keväällä olen kahden kymmenen ops:n päässä valmistumisesta. Kiitos kouluttajat, opettajat, päälliköt ja opiskelukaverit!</p>
+                    <p>Labrakokeista paljastuu, että veriarvoni ovat lähestulkoon täydelliset! Omassa päässäni päätän 4 vuotta kestäneen projektin jonka aikana olen päässyt eroon tupakoinnista, ylipainosta sekä korkeasta verenpaineesta.</p>
+                </div>
+            </div>
+        <div class="kontti left">
+            <div class="sisalto">
+                <h2>2019</h2>
+                <p>Kolmas kesä Helsingissä! 1000 km.</p>
+                <p>Vuoden aikana ja tähän mennessä Hyriassa iltaopiskelijat olivat opiskelleet Ahorannan Sähkötekniikan kannesta kanteen, jonka lisäksi asennettiin ja johdotettiin:</p>
+                <ul style="list-style-type: none;">
+                    <li>5 mittarikeskusta</li>
+                    <li>75 ryhmäjohtoa</li>
+                    <li>100 pistorasiaa</li>
+                    <li>20 valaisinta (kostea,ulko)</li>
+                    <li>5 paria lämpöpattereita</li>
+                    <li>kiuas</li>
+                    <li>liike- ja hämärätunnistimet</li>
+                    <li>porrasvalo-ohjaus</li>
+                    <li>kourallinen erilaisia releitä</li>
+                </ul>
+                <p>Lisäksi kaikkiin jännitteettömät sekä useimpiin jännitteelliset käyttöönottotarkastukset pöytäkirjoineen (Fluke 1662/Amprobe Telaris Pro).</p>
+            </div>
+        </div>
+        <div class="kontti right">
+            <div class="sisalto">
+                <h2>2018</h2>
+                <p>Syksyllä kävi jälleen tuuri. Pääsin mukaan sähkö- ja automaatioalan pt:n opiskeluryhmään. Tätä tuli kestämään 2 vuotta.</p>
+                <p>Toinen kesä Helsingissä ja kaupunkifillareilla 1100 km.</p>
+                <p>Keväällä olin takaisin Hyriassa jossa istuin 8 viikon uravalmennuksen.</p>
+            </div>
+        </div>
+        <div class="kontti left">
+            <div class="sisalto">
+                <h2>2017</h2>
+                <p>Vapaa-aikaa oli joten ilmoittauduin lukioon.</p>
+                <p>Ensimmäinen kesä Helsingissä ja kaupunkifillareilla.</p>
+                <p>Tammikuussa päätin kokkiopinnot. Kiitos Juhani, Atte ja muut kouluttajat sekä mahtava opiskeluryhmä!</p>
+            </div>
+        </div>
+        <div class="kontti right">
+            <div class="sisalto">
+                <h2>2016</h2>
+                <p>Keväällä kävi tuuri ja pääsin Aten valmennettavaksi Hyriaan suorittamaan HoReCa-tutkintoa!</p>
+            </div>
+        </div>
+        <div class="kontti left">
+            <div class="sisalto">
+                <h2>2014-2015</h2>
+                <p>CS:GO 3000h.</p>
+            </div>
+        </div>
+  
+        <script>
+            function naytaAikajana() {
+                document.getElementById('tyot').style.display = 'none';
+                document.getElementById('patevyydet').style.display = 'none';
+                document.getElementById('aikajana').style.display = 'block';
+            }    
+        
+            function naytaPatevyydet() {
+                document.getElementById('aikajana').style.display = 'none';
+                document.getElementById('tyot').style.display = 'none';
+                document.getElementById('patevyydet').style.display = 'block';
+            }
+            
+        </script>
+    </body>
+</html>
